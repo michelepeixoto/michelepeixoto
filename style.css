@@ -1,0 +1,424 @@
+/* BY Michele Peixoto */
+
+/*--------------------- general ----------------------*/
+* {
+  font-family: "Ubuntu Condensed", sans-serif;
+  text-align: center;
+}
+
+body {
+  height: auto;
+  background-color: #cdcdcd;
+}
+
+p {
+  padding: 0 10px;
+}
+
+h3 {
+  font-weight: normal;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  color: #298cff;
+}
+
+a:visited {
+  color: #a561ff;
+}
+
+td {
+  padding: 20px 6px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.section {
+  float: left;
+  width: 64%;
+  background-color: #8de068;
+  margin: 100px 1% 0 14%;
+  border-style: solid;
+  border-color: white;
+  border-width: thin;
+  padding-bottom: 20px;
+}
+/*--------------------- general ----------------------*/
+
+/*----------------------- Menu -----------------------*/
+#menu p {
+  background-color: #b8ff98;
+  padding: 10px;
+  margin-top: 34px;
+  border-style: solid none;
+  border-color: white;
+  border-width: thin;
+}
+
+#menu p:hover {
+  background-color: white;
+}
+
+#menu a,
+#menu a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+#menu b {
+  font-weight: normal;
+}
+
+.sidebar {
+  width: 12%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  background-color: #e6e6e6;
+  border-style: solid;
+  border-color: white;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  overflow: hidden;
+}
+
+.personal-picture {
+  height: 160px;
+  border-radius: 100px;
+  border-style: solid;
+  border-color: white;
+  border-width: thin;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.menu-icon {
+  display: none;
+  width: 80%;
+}
+/*----------------------- Menu -----------------------*/
+
+/*----------------------- Top ------------------------*/
+#header {
+  margin-top: 100px;
+  width: 94%;
+}
+
+.icons {
+  margin-top: 50px;
+  width: 96%;
+}
+
+.icons img {
+  width: 60px;
+  margin-right: 30px;
+}
+
+#email {
+  display: none;
+  width: 220px;
+  height: 70px;
+  background-color: white;
+  margin: 10px 0 0 20%;
+  position: absolute;
+}
+
+#clsBtn {
+  width: 10px;
+  float: right;
+  margin: 5px 0 10px;
+}
+/*----------------------- Top ------------------------*/
+
+/*----------------------- About ----------------------*/
+#about p,
+#about ul {
+  padding: 0 10%;
+}
+
+#personalPhone {
+  display: none;
+}
+
+#about th {
+  border-style: none none solid;
+  border-color: white;
+  padding-bottom: 8px;
+}
+
+.timeline-horizontal {
+  padding: 0 80px;
+}
+
+.timeline-horizontal td {
+  padding-bottom: 0px;
+}
+
+.timeline-vertical {
+  display: none;
+  margin-top: 20px;
+  padding: 0 10px;
+}
+
+.timeline-vertical td {
+  text-align: left;
+}
+/*----------------------- About ----------------------*/
+
+/*---------------------- Projects --------------------*/
+.projects {
+  float: left;
+  width: 80%;
+  margin-left: 10%;
+}
+
+.projects b {
+  font-size: 120%;
+  color: white;
+}
+
+.projects a {
+  float: left;
+  margin-left: 20px;
+  font-size: 124%;
+}
+
+.projects p {
+  clear: both;
+  line-height: 26px;
+}
+
+.projects li {
+  padding: 6px 0;
+}
+
+.white-line-divider {
+  border-style: solid none none;
+  border-color: white;
+  margin: 20px 0;
+}
+/*---------------------- Projects --------------------*/
+
+/*------------------- Accomplishments ----------------*/
+.accomplishments-divider {
+  font-size: 180%;
+  color: white;
+  float: right;
+  margin: -16px 20%;
+  padding: 0 5px;
+  background-color: #8de068;
+}
+
+.accomplishment {
+  border-style: solid none none;
+  border-color: white;
+  padding: 10px 10%;
+  margin-bottom: 30px;
+}
+/*------------------- Accomplishments ----------------*/
+
+/*----------------------- Skills ---------------------*/
+.skills-table {
+  width: 100%;
+  padding: 0 3%;
+}
+
+#skills th,
+#skills td {
+  border-style: none none solid;
+  border-color: white;
+  border-width: thin;
+}
+
+.advanced,
+#skills th:nth-child(1),
+#skills td:nth-child(1),
+.skills-one-col h4:nth-child(1) {
+  background-color: #d6ffc2;
+}
+
+.intermediate,
+#skills th:nth-child(2),
+#skills td:nth-child(2),
+.skills-one-col h4:nth-child(3) {
+  background-color: #bee6ac;
+}
+
+.beginner,
+#skills th:nth-child(3),
+#skills td:nth-child(3),
+.skills-one-col h4:nth-child(5) {
+  background-color: #a0d18a;
+}
+
+.skills-one-col {
+  display: none;
+  padding: 0 3%;
+}
+
+.skills-one-col p,
+.skills-one-col h4 {
+  padding: 10px;
+  margin: 0;
+}
+
+.skills-one-col h4 {
+  border-style: solid none solid none;
+  border-color: white;
+}
+/*----------------------- Skills ---------------------*/
+
+/*----------------------- Footer ---------------------*/
+#footer {
+  color: white;
+  background-color: transparent;
+  border: none;
+}
+/*----------------------- Footer ---------------------*/
+
+/*------------------- Responsiveness -----------------*/
+@media only screen and (max-width: 1200px) {
+  #header {
+    width: 86%;
+  }
+
+  .icons {
+    width: 88%;
+  }
+
+  .section {
+    margin-left: 10%;
+  }
+
+  .sidebar {
+    width: 14%;
+  }
+
+  #menu p {
+    margin-top: 28px;
+  }
+
+  #icon {
+    height: 138px;
+  }
+
+  .timeline-horizontal {
+    padding: 0 40px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .sidebar {
+    width: 18%;
+  }
+
+  #icon {
+    height: 116px;
+  }
+
+  .projects {
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .timeline-horizontal {
+    padding: 0 20px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  #personal {
+    display: none;
+  }
+
+  #personalPhone {
+    display: inline;
+  }
+
+  .icons {
+    width: 88%;
+  }
+
+  .section {
+    width: 74%;
+    margin-left: 5%;
+  }
+
+  .sidebar {
+    width: 10%;
+  }
+
+  #menu p {
+    margin-top: 30px;
+    padding: 6px 0 6px 7px;
+  }
+
+  .menu-hide {
+    display: none;
+  }
+
+  .menu-icon {
+    display: inherit;
+  }
+
+  #icon {
+    height: 138px;
+    margin-top: 10px;
+    height: 150px;
+    border-color: white;
+  }
+
+  #email {
+    margin-left: 10%;
+  }
+
+  #about th {
+    border-style: none solid none none;
+    padding: 0 14px 0 0;
+  }
+
+  .timeline-horizontal {
+    display: none;
+  }
+
+  .timeline-vertical {
+    display: inherit;
+  }
+
+  .accomplishments-divider {
+    margin: -16px 10%;
+  }
+
+  .skills-table {
+    display: none;
+  }
+
+  .skills-one-col {
+    display: inherit;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .section {
+    width: 83%;
+    margin-left: 1%;
+  }
+
+  .icons {
+    width: 98%;
+  }
+
+  .sidebar {
+    width: 12%;
+  }
+}
+/*------------------- Responsiveness -----------------*/

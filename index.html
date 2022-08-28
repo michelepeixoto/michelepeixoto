@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<!--By Michele Peixoto-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Michele Peixoto's Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed" rel="stylesheet">
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="sidebar">
+      <div id="personal">
+        <img src="Images/MMP.jpg" class="personal-picture">
+      </div>
+      <div id="menu">
+        <a href="#header">
+          <p>
+            <b class="menu-hide">Top</b>
+            <!-- icon by Lyolya at flaticon.com -->
+            <img class="menu-icon" src="Images/top.png" alt="Top">
+          </p>
+        </a>
+        <a href="#about">
+          <p>
+            <b class="menu-hide">About</b>
+            <!-- icon by Freepik at flaticon.com -->
+            <img class="menu-icon" src="Images/about.png" alt="About">
+          </p>
+        </a>
+        <a href="#skills">
+          <p>
+            <b class="menu-hide">Skills</b>
+            <!-- icon by srip at flaticon.com -->
+            <img class="menu-icon" src="Images/skills.png" alt="Skills">
+          </p>
+        </a>
+        <a href="#projects">
+          <p>
+            <b class="menu-hide">Projects</b>
+            <!-- icon by Freepik at flaticon.com -->
+            <img class="menu-icon" src="Images/projects.png" alt="Projects">
+          </p>
+        </a>
+        <a href="#accomplishments">
+          <p>
+            <b class="menu-hide">Accomplishments</b>
+            <!-- icon by mynamepong at flaticon.com -->
+            <img class="menu-icon" src="Images/accomplishments.png" alt="Accomplishments">
+          </p>
+        </a>
+        <a href="#contact">
+          <p>
+            <b class="menu-hide">Contact</b>
+            <!-- icon by Skyclick at flaticon.com -->
+            <img class="menu-icon" src="Images/contact.png" alt="Contact">
+          </p>
+        </a>
+      </div>
+    </div>
+    <div id="header">
+      <h1>Michele Mendes Peixoto</h1>
+      <h3>A creative and detail-oriented programmer with a passion for gaming</h3>
+    </div> 
+    <div id="contact" class="icons">
+      <!-- icons from flyclipart.com -->
+      <a class="pointer" onmousedown="showEmail()">
+      <img src="Images/email-icon.png" alt="Email"></a>
+      <a href="https://www.linkedin.com/in/michele-peixoto/" target="_blank">
+      <img src="Images/linkedin-icon.png" alt="LinkedIn"></a>
+      <a href="https://twitter.com/scully376" target="_blank">
+      <img src="Images/twitter-icon.png" alt="Twitter"></a>
+      <a href="https://www.instagram.com/scully376/" target="_blank">
+      <img src="Images/instagram-icon.png" alt="Instagram"></a>
+      <a href="https://www.youtube.com/user/micheleemendees" target="_blank">
+      <img src="Images/youtube-icon.png" alt="Youtube"></a>
+    </div>
+    <div id="email">
+      <p id="clsBtn" class="pointer" onmousedown="hideEmail()">X</p>
+      <br>
+      <p class="email">michelepeixoto7@hotmail.com</p>
+    </div>
+    <div id="about" class="section">
+      <h2>About</h2>
+      <div id="personalPhone">
+        <img src="Images/MMP.jpg" class="personal-picture">
+      </div>
+      <table class="timeline-horizontal">
+        <tr>
+          <th>1995</th>
+          <th>2009</th>
+          <th>2014</th>
+          <th>2018</th>
+          <th>2019</th>
+          <th>2021</th>
+        </tr>
+        <tr>
+          <td>Born in Brazil</td>
+          <td>Moved to U.S.</td>
+          <td>Coded for the first time in high school class Intro to Java</td>
+          <td>Graduated Year Up program at Bellevue College with Database Analytics certificate</td>
+          <td>Returned to Expedia as Risk Analyst</td>
+          <td>Started Working at Nintendo as Jr. System Debugger</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>Completed six-month internship in automation at Expedia</td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+      <table class="timeline-vertical">
+        <tr>
+          <th>1995</th>
+          <td>Born in Brazil</td>
+        </tr>
+        <tr>
+          <th>2009</th>
+          <td>Moved to U.S.</td>
+        </tr>
+        <tr>
+          <th>2014</th>
+          <td>Coded for the first time in high school class Intro to Java</td>
+        </tr>
+        <tr>
+          <th>2018</th>
+          <td>Graduated the Year Up program at Bellevue College with a Database Analytics certificate</td>
+          <td>Completed a six-month internship in automation at Expedia</td>
+        </tr>
+        <tr>
+          <th>2019</th>
+          <td>Returned to Expedia as Risk Analyst</td>
+        </tr>
+        <tr>
+          <th>2021</th>
+          <td>Got contracted with Aerotek to work at Nintendo as Jr. System Debugger</td>
+          <td>Started developing a VR personal project with C# in Unity called Carnivalley</td>
+        </tr>
+        <tr>
+          <th>2022</th>
+          <td>Got promoted to System Debugger</td>
+          <td>Left Aerotek to join Synodic Arc as a Programming Intern</td>
+        </tr>
+      </table>
+    </div>
+    <div id="skills" class="section">
+      <h2>Skills</h2>
+      <table class="skills-table">
+        <tr>
+          <th>Advanced</th>
+          <th>Intermediate</th>
+          <th>Beginner</th>
+        </tr>
+        <tr>
+          <td>C#, Unity, Software Testing</td>
+          <td>Python, Django, JavaScript</td>
+          <td>C++, Unreal Engine, SQL, Java</td>
+        </tr>
+        <tr>
+          <td>GitHub, Perforce, Jira</td>
+          <td>HTML, CSS</td>
+          <td>PowerShell, Bash</td>
+        </tr>
+        <tr>
+          <td>Microsoft Visual Studio, Microsoft Excel</td>
+          <td>Pycharm</td>
+          <td>Microsoft Visio, Microsoft Access</td>
+        </tr>
+        <tr>
+          <td>English, Portuguese</td>
+          <td>French</td>
+          <td>Spanish</td>
+        </tr>
+      </table>
+      <div class="skills-one-col">
+        <h4>Advanced</h4>
+        <div class="advanced">
+          <p>C#, Unity, Software Testing</p>
+          <p>GitHub, Perforce, Jira</p>
+          <p>Microsoft Visual Studio, Microsoft Excel</p>
+          <p>English, Portuguese</p>
+        </div>
+        <h4>Intermediate</h4>
+        <div class="intermediate">
+          <p>Python, Django, JavaScript</p>
+          <p>HTML, CSS</p>
+          <p>Pycharm</p>
+          <p>French</p>
+        </div>
+        <h4>Beginner</h4>
+        <div class="beginner">
+          <p>C++, Unreal Engine, SQL, Java</p>
+          <p>PowerShell, Bash</p>
+          <p>Microsoft Visio, Microsoft Access</p>
+          <p>Spanish</p>
+        </div>
+      </div>
+    </div>
+    <div id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="projects">
+        <h3><a href="https://carnivalley.glitch.me/" target="_blank">Carnivalley (WIP)</a></h3>
+        <br>
+        <div class="white-line-divider"></div>
+        <p>A VR game for the Oculus Quest that is still in development (website coming soon).
+        Have fun at this carnival in the valley with games and rides run by cute robots. Win gems to buy prizes.</p>
+        <ul>
+          <b>Contributions</b>
+          <li>C# implementation in Unity</li>
+          <li>Game design</li>
+          <li>3D Modeling and Animation</li>
+          <li>Developed the Carnivalley website</li>
+        </ul>
+        <h3><a href="https://findmegame.glitch.me/home.html" target="_blank">Find Me</a></h3>
+        <br>
+        <div class="white-line-divider"></div>
+        <p>Find Me is a web-based 2D game. You must solve clues to unlock the doors that are keeping you from finding the person who texted you for help.
+          This project was made as a submission for the 2018 Global Game Jam, a competition to make a game in 48 hours that fits the theme of transmission.
+          Made with Construct 3.</p>
+        <ul>
+          <b>Contributions</b>
+          <li>Story and level design</li>
+          <li>Construct 3 implementation</li>
+          <li>Developed the Find Me website</li>
+        </ul>
+        <h3><a href="https://devilhaunts.glitch.me/" target="_blank">Devil Haunts</a></h3>
+        <br>
+        <div class="white-line-divider"></div>
+        <p>My first ever game made with RPG Maker. 
+          An escape the room game with a taste of horror. 
+          Solve the clues and find your path as you figure out where you are and why you're there.</p>
+        <ul>
+          <b>Contributions</b>
+          <li>Story and level design</li>
+          <li>RPG Maker implementation</li>
+          <li>2D Art</li>
+          <li>Developed the Devil Haunts website</li>
+        </ul>
+        <h3><a href="http://www.mmp.dx.am/lazylaundry/about.html" target="_blank">LazyLaundry</a></h3>
+        <br>
+        <div class="white-line-divider"></div>
+        <p>Made as a project for PROG 160 - Software Design class. In three months our team designed a software for connecting people who need their laundry done and people who can provide that service. We came up with requirements, diagrams of the system and a prototype.</p>
+        <ul>
+          <b>Contributions</b>
+          <li>Requirements, use cases, methods and classes</li>
+          <li>Low-fidelity and high-fidelity prototypes</li>
+          <li>MS Visio diagrams</li>
+          <li>Documentation</li>
+          <li>Developed the Demo website</li>
+        </ul>
+        <h3><a href="http://www.mmp.dx.am/Portfolio/Home.html" target="_blank">Course Portfolio</a></h3>
+        <br>
+        <div class="white-line-divider"></div>
+        <p>My very first website - Web Development class project to display the coursework.</p>
+      </div>
+    </div>
+    <div id="accomplishments" class="section">
+      <h2>Accomplishments</h2>
+      <div>
+        <b class="accomplishments-divider">4</b>
+      </div>
+      <p class="accomplishment">
+        <b style="font-size: 140%; margin-right: 30px;">Certifications</b> 
+        <a href="https://www.udemy.com/certificate/UC-f8628a6a-f77d-4ed5-bbe5-d5179ac40c16/" target="_blank">QA Manual Testing</a> • 
+        <a href="https://www.udemy.com/certificate/UC-ATJXVOM1/" target="_blank">Python</a> • 
+        <a href="https://www.pluralsight.com/courses/django-fundamentals-update" 
+           target="_blank">Django Fundamentals</a> • 
+        <a href="https://www.youracclaim.com/badges/3299a2e8-47e9-49e1-a022-9dccd4129200/linked_in_profile" 
+           target="_blank">Microsoft Excel 2016 Introductory</a> • 
+        <a href="https://1drv.ms/b/s!AmN-ghv8KQoxnXZQ81bb0TLKNvWn" target="_blank">ServSafe</a>
+      </p>
+      <div>
+        <b class="accomplishments-divider">7</b>
+      </div>
+      <p  class="accomplishment">
+        <b style="font-size: 140%; margin-right: 30px;">Courses</b> 
+        <a href="https://catalog.bellevuecollege.edu/preview_program.php?catoid=1&poid=110&returnto=18" target="_blank">
+          Business Data Management Tools • Business Spreadsheet Analysis and Design • Calculus II • 
+          Communication in a Diverse Workplace • Introduction to Web Development • SQL Fundamentals • 
+          System Analysis and Design
+        </a>
+      </p>
+    </div>
+    <div id="footer" class="section">
+      <p>Last updated: August 28 2022</p>
+    </div>
+  </body>
+</html>
