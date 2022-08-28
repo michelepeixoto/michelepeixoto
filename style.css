@@ -123,6 +123,10 @@ td {
   margin-right: 30px;
 }
 
+.bigger-icon img {
+  width: 55px;
+}
+
 #email {
   display: none;
   width: 220px;
@@ -161,6 +165,7 @@ td {
 
 .timeline-horizontal td {
   padding-bottom: 0px;
+  vertical-align: text-top;
 }
 
 .timeline-vertical {
