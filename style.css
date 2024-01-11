@@ -51,62 +51,6 @@ td {
 }
 /*--------------------- general ----------------------*/
 
-/*----------------------- Menu -----------------------*/
-#menu p {
-  background-color: #b8ff98;
-  padding: 10px;
-  margin-top: 34px;
-  border-style: solid none;
-  border-color: white;
-  border-width: thin;
-}
-
-#menu p:hover {
-  background-color: white;
-}
-
-#menu a,
-#menu a:visited {
-  color: black;
-  text-decoration: none;
-}
-
-#menu b {
-  font-weight: normal;
-}
-
-.sidebar {
-  width: 12%;
-  height: 100%;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  position: fixed;
-  background-color: #e6e6e6;
-  border-style: solid;
-  border-color: white;
-  border-top: none;
-  border-right: none;
-  border-bottom: none;
-  overflow: hidden;
-}
-
-.personal-picture {
-  height: 160px;
-  border-radius: 100px;
-  border-style: solid;
-  border-color: white;
-  border-width: thin;
-  margin-top: 20px;
-  overflow: hidden;
-}
-
-.menu-icon {
-  display: none;
-  width: 80%;
-}
-/*----------------------- Menu -----------------------*/
-
 /*----------------------- Top ------------------------*/
 #header {
   margin-top: 100px;
@@ -161,11 +105,15 @@ td {
 
 .timeline-horizontal {
   padding: 0 80px;
+  empty-cells: hide;
 }
 
 .timeline-horizontal td {
   padding-bottom: 0px;
   vertical-align: text-top;
+  border-style: none solid none none;
+  border-width: 1px;
+  border-color: white;
 }
 
 .timeline-vertical {
@@ -176,6 +124,9 @@ td {
 
 .timeline-vertical td {
   text-align: left;
+  border-style: none none solid;
+  border-width: 1px;
+  border-color: white;
 }
 /*----------------------- About ----------------------*/
 
@@ -279,8 +230,65 @@ td {
 .skills-one-col h4 {
   border-style: solid none solid none;
   border-color: white;
+  border-width: 1px;
 }
 /*----------------------- Skills ---------------------*/
+
+/*----------------------- Menu -----------------------*/
+#menu p {
+  background-color: #b8ff98;
+  padding: 10px;
+  margin-top: 34px;
+  border-style: solid none;
+  border-color: white;
+  border-width: thin;
+}
+
+#menu p:hover {
+  background-color: white;
+}
+
+#menu a,
+#menu a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+#menu b {
+  font-weight: normal;
+}
+
+.sidebar {
+  width: 12%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  background-color: #e6e6e6;
+  border-style: solid;
+  border-color: white;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  overflow: hidden;
+}
+
+.personal-picture {
+  height: 160px;
+  border-radius: 100px;
+  border-style: solid;
+  border-color: white;
+  border-width: thin;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.menu-icon {
+  display: none;
+  width: 80%;
+}
+/*----------------------- Menu -----------------------*/
 
 /*----------------------- Footer ---------------------*/
 #footer {
@@ -291,6 +299,12 @@ td {
 /*----------------------- Footer ---------------------*/
 
 /*------------------- Responsiveness -----------------*/
+@media only screen and (max-width: 1330px) {
+  .personal-picture {
+    height: 140px;
+  }
+}
+
 @media only screen and (max-width: 1200px) {
   #header {
     width: 86%;
@@ -312,7 +326,7 @@ td {
     margin-top: 28px;
   }
 
-  #icon {
+  .personal-picture {
     height: 138px;
   }
 
@@ -321,13 +335,19 @@ td {
   }
 }
 
+@media only screen and (max-width: 1040px) {
+  .personal-picture {
+    height: 112px;
+  }
+}
+
 @media only screen and (max-width: 900px) {
   .sidebar {
     width: 18%;
   }
 
-  #icon {
-    height: 116px;
+  .personal-picture {
+    height: 120px;
   }
 
   .projects {
@@ -337,6 +357,21 @@ td {
 
   .timeline-horizontal {
     padding: 0 20px;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  #about th {
+    border-style: none solid none none;
+    padding: 0 14px 0 0;
+  }
+  
+  .timeline-horizontal {
+    display: none;
+  }
+
+  .timeline-vertical {
+    display: inherit;
   }
 }
 
@@ -375,7 +410,7 @@ td {
     display: inherit;
   }
 
-  #icon {
+  .personal-picture {
     height: 138px;
     margin-top: 10px;
     height: 150px;
@@ -384,19 +419,6 @@ td {
 
   #email {
     margin-left: 10%;
-  }
-
-  #about th {
-    border-style: none solid none none;
-    padding: 0 14px 0 0;
-  }
-
-  .timeline-horizontal {
-    display: none;
-  }
-
-  .timeline-vertical {
-    display: inherit;
   }
 
   .accomplishments-divider {
@@ -412,10 +434,11 @@ td {
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 440px) {
   .section {
     width: 83%;
     margin-left: 1%;
+    overflow: scroll;
   }
 
   .icons {
